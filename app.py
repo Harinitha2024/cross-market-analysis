@@ -176,9 +176,16 @@ if page == "📊 Market Overview":
             name="S&P 500", yaxis="y2", line=dict(color="#4472C4")
         ))
         fig.update_layout(
-            yaxis=dict(title="Bitcoin Price (₹)", titlefont=dict(color="#F7931A")),
-            yaxis2=dict(title="S&P 500", titlefont=dict(color="#4472C4"),
-                        overlaying="y", side="right"),
+            yaxis=dict(
+                title="Bitcoin Price (₹)",
+                title_font=dict(color="#F7931A")
+            ),
+            yaxis2=dict(
+                title="S&P 500",
+                title_font=dict(color="#4472C4"),
+                overlaying="y",
+                side="right"
+            ),
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
             height=400
         )
